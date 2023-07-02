@@ -1,0 +1,57 @@
+.container {
+    width: 100%; /* Sets the width of the container to 100% of its parent */
+    height: 100vh; /* Sets the height of the container to 100% of the viewport height */
+    background: linear-gradient(to bottom, #fcf6f0, #f7ebda); /* Applies a linear gradient background from #fcf6f0 to #f7ebda */
+    display: flex; /* Uses flexbox for layout */
+    align-items: center; /* Vertically centers the contents of the container */
+    justify-content: center; /* Horizontally centers the contents of the container */
+  }
+  
+  .calculator {
+    background: #f8f8f8; /* Sets the background color of the calculator to #f8f8f8 */
+    padding: 20px; /* Adds 20 pixels of padding around the calculator */
+    border-radius: 12px; /* Sets a border radius of 12 pixels to create rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Applies a box shadow effect */
+  }
+  
+  .calculator form input {
+    border: 0; /* Removes the border of the input elements */
+    outline: 0; /* Removes the outline when the input elements are focused */
+    width: 60px; /* Sets the width of the input elements to 60 pixels */
+    height: 60px; /* Sets the height of the input elements to 60 pixels */
+    border-radius: 50%; /* Creates a circular shape by setting the border radius to 50% */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Applies a box shadow effect */
+    background: linear-gradient(to bottom, #ffd66b, #ffaf5f); /* Applies a linear gradient background from #ffd66b to #ffaf5f */
+    font-size: 20px; /* Sets the font size of the text inside the input elements to 20 pixels */
+    color: #ffffff; /* Sets the text color to white */
+    cursor: pointer; /* Displays a pointer cursor when hovering over the input elements */
+    margin: 10px; /* Adds 10 pixels of margin around the input elements */
+    transition: background-color 0.2s ease-in-out; /* Adds a smooth transition effect for the background color */
+  }
+  
+  .calculator form input:hover {
+    background-color: #ff9f4a; /* Changes the background color to #ff9f4a when hovering over the input elements */
+  }
+  
+  .calculator form .display {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: flex-end; /* Aligns the contents of the display element to the right */
+    margin: 20px 0; /* Adds 20 pixels of margin above and below the display element */
+  }
+  
+  div .calculator form .display input {
+    text-align: right; /* Aligns the text inside the display input elements to the right */
+    flex: 1; /* Allows the display input elements to grow and fill the available space */
+    box-shadow: none; /* Removes the box shadow from the display input elements */
+  }
+  /* - How to address: go to outer tag and write them  in order to reach the target tag
+- if there is class instead of name of tag jsut mention name of the class with a dot
+- if there is a one tag which is unique you can ignore its parrent tags 
+and start from it and go to its children: for example
+you can ignore above "div .calculator" */
+
+  .calculator form input.equal {
+    width: 140px; /* Sets the width of the input elements with class "equal" to 140 pixels */
+    background: #ff5f5f; /* Sets the background color of the input elements with class "equal" to #ff5f5f */
+    color: #ffffff; /* Sets the text color to white
+    
