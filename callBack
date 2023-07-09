@@ -1,0 +1,13 @@
+const greet = (name, callback) => {
+  console.log(`Hello, ${name}!`);
+
+  // Invoke the callback function
+  callback();
+}
+
+const sayGoodbye = () => {
+  console.log('Goodbye!');
+}
+
+// Call the greet function and pass in the sayGoodbye function as a callback
+greet('John', sayGoodbye);
